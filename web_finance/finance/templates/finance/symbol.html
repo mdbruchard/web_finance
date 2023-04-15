@@ -1,0 +1,42 @@
+{% extends 'finance/layout.html' %}
+{% load static %}
+
+{% block title %}Quote{% endblock %}
+
+{% block body %}
+<div class="q-ctn">
+    <div class="h-ctn">
+        <h1>Quote</h1>
+        <h2>Check the quote request for {{ symbol }}</h2>
+    </div>
+    <div class="b-ctn">
+        <h3>{{ name }}</h3>
+        <h1>{{ value }}</h1>
+        <h2 id="change1" class="change">{{ change }}</h2>
+        <h2 id="change2" class="change"> (<span id="value">{{ change_percent }}</span>%)</h2>
+        
+    </div>
+</div>
+<script>
+    let valor = document.querySelector('#change1');
+    if (valor.innerText < 0) 
+    {
+        valor.style.color = 'red';
+    }
+    else
+    {
+        valor.style.color = 'green';
+    }
+
+    let valor2 = document.querySelector('#value');
+    if (valor2.innerText < 0)
+    {
+        document.querySelector('#change2').style.color = 'red';
+    }
+    else
+    {
+        document.querySelector('#change2').style.color = 'green';
+    }
+    
+</script>
+{% endblock %}

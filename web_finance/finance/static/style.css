@@ -1,0 +1,136 @@
+/* Global styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Container styles */
+
+.container {
+    width: 45%;
+    margin: 0 auto;
+    background-color: lightgray;
+}
+
+.container-head {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.container-head h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.container-head h3 {
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.ctn-p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#ctn-p1 {
+    font-style: italic;
+}
+
+/* Form styles */
+
+.form {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.from-head h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.inp-form {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+}
+
+#submit-btn {
+    background-color: #d980ff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 50px 20px;
+}
+
+#submit-btn:hover {
+    background-color: #a100e6;
+}
+
+/* Quote container styles */
+
+.q-ctn {
+    background-color: #f2f2f2;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.h-ctn {
+    text-align: center;
+    flex-basis: 100%;
+    margin-bottom: 20px;
+}
+
+.h-ctn h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.h-ctn h2 {
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.b-ctn {
+    text-align: center;
+    flex-basis: 100%;
+}
+
+.b-ctn h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.b-ctn h2 {
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.change {
+    color: #003cff;
+}

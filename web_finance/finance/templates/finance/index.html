@@ -4,5 +4,52 @@
 {% block title %}Finance{% endblock %}
 
 {% block body %}
-TODO
+
+<div class="container">
+    <div class="container-head">
+
+        <h1>
+            Currencies Quote
+        </h1>
+
+        <h3 id="ctn-title">
+            Check how the value of your money in other currency
+        </h3>
+
+        <p class="ctn-p" id="ctn-p1">
+            Are you looking to travel aboard? Are you looking to exchange you currency?
+        </p>
+        <p class="ctn-p" id="ctn-p2">
+            Checkout how much your money worth in another currency.
+        </p>
+
+    </div>
+    <div class="container-body">
+        <div class="form">
+            <div class="from-head">
+                <h3 id="ctn-fh">
+                    Fill up the the form below to get the currency's quote
+                </h3>
+            </div>
+            <div class="form-body">
+                
+                {% if message %}
+                
+                <p style="padding-bottom: 10px; color: red;">{{ message }}</p>
+                
+                {% endif %}
+                <form action="{% url 'index' %}" method="post">
+                    {% csrf_token %}
+                    <input required class="inp-form" type="text" name="syb1" id="syb1" placeholder="GBP">
+                    
+                    <input required class="inp-form" type="text" name="syb2" id="syb2" placeholder="EUR">
+
+                    <input type="submit" id="submit-btn" value="Get Quote">
+                </form>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
 {% endblock %}
